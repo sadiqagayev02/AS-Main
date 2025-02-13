@@ -1,0 +1,29 @@
+name: my_app
+description: A new Flutter project.
+
+publish_to: "none" # Əgər tətbiqi `pub.dev`-ə yükləmək istəmirsənsə, bunu saxla.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0" # Dart SDK versiyası
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6 # iOS üslublu ikonlar üçün
+  shared_preferences: ^2.2.2 # Lokal məlumatları saxlamaq üçün
+  speech_to_text: ^6.1.1 # Səsi mətnə çevirmək üçün
+  flutter_tts: ^3.8.5 # Mətni səsli oxumaq üçün
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.3 # Standart linter qaydaları
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/ # Əgər şəkillər və ya fayllar varsa, `assets/` qovluğunu istifadə edə bilərsən.

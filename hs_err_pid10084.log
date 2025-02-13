@@ -1,0 +1,232 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffefec31b79, pid=10084, tid=5728
+#
+# JRE version:  (21.0.5+11) (build )
+# Java VM: OpenJDK 64-Bit Server VM (21.0.5+11-LTS, mixed mode, sharing, tiered, compressed class ptrs, unknown gc, windows-amd64)
+# Problematic frame:
+# C  [jimage.dll+0x1b79]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: 
+
+Host: 11th Gen Intel(R) Core(TM) i5-1155G7 @ 2.50GHz, 8 cores, 7G,  Windows 11 , 64 bit Build 26100 (10.0.26100.3037)
+Time: Thu Feb 13 10:27:30 2025 Azerbaijan Standard Time elapsed time: 2.044234 seconds (0d 0h 0m 2s)
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+Stack: [0x000000f5a0b00000,0x000000f5a0c00000],  sp=0x000000f5a0bfe110,  free space=1016k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [jimage.dll+0x1b79]
+C  [jimage.dll+0x1d03]
+C  [jimage.dll+0x25c9]
+V  [jvm.dll+0x21d8f2]
+V  [jvm.dll+0xc9700]
+V  [jvm.dll+0x859b0c]
+V  [jvm.dll+0x4504ee]
+V  [jvm.dll+0x452131]
+C  [jli.dll+0x5278]
+C  [ucrtbase.dll+0x37b0]
+C  [KERNEL32.DLL+0x2e8d7]
+C  [ntdll.dll+0xbbf2c]
+
+
+siginfo: EXCEPTION_ACCESS_VIOLATION (0xc0000005), reading address 0x0000000000007bdc
+
+
+Registers:
+RAX=0x000000000000079f, RBX=0x000000f5a0bfe201, RCX=0x00007ffefec36000, RDX=0x0000000000001ef0
+RSP=0x000000f5a0bfe110, RBP=0x000000f5a0bfe200, RSI=0x0000000000007774, RDI=0x000000f5a0bfe200
+R8 =0x00007ffefec34298, R9 =0x000000000000001c, R10=0x00007ffefd870000, R11=0x00007ffefec36000
+R12=0x0000000000000000, R13=0x000000f5a0bffc90, R14=0x000000f5a0bff270, R15=0x0000000180a060b8
+RIP=0x00007ffefec31b79, EFLAGS=0x0000000000010247
+
+
+Top of Stack: (sp=0x000000f5a0bfe110)
+0x000000f5a0bfe110:   006300730076002e 000000f5a0bfe5d8
+0x000000f5a0bfe120:   0065007400780065 006f00690073006e
+0x000000f5a0bfe130:   000002a297bada60 00007ffefec31d03
+0x000000f5a0bfe140:   000000000000000b 000002a297bada60
+0x000000f5a0bfe150:   002e00390033002e 00690077002d0030
+0x000000f5a0bfe160:   002d00320033006e 005c003400360078
+0x000000f5a0bfe170:   005c00650072006a 0030002e00310032
+0x000000f5a0bfe180:   000000630035002e 00320033006e0069
+0x000000f5a0bfe190:   003600380078002d 005c00340036005f
+0x000000f5a0bfe1a0:   00003548db714c6c 0076007200650073
+0x000000f5a0bfe1b0:   00000001809e3aa0 0000000000000017
+0x000000f5a0bfe1c0:   000002a297bada60 000000f5a0bff270
+0x000000f5a0bfe1d0:   000000000000000b 00007ffefec325c9
+0x000000f5a0bfe1e0:   0000000000000000 0000000000000000
+0x000000f5a0bfe1f0:   000002a297bd5e00 0000000000000000
+0x000000f5a0bfe200:   61622e6176616a2f 692f6b646a2f6573
+0x000000f5a0bfe210:   2f6c616e7265746e 6f6974706f2f6d76
+0x000000f5a0bfe220:   000000000000736e 0000000000000000
+0x000000f5a0bfe230:   0000000000000000 0000000000000000
+0x000000f5a0bfe240:   000002a297bd5e00 0000000000000000
+0x000000f5a0bfe250:   0000000000000000 0000000000000000
+0x000000f5a0bfe260:   0000000000000000 0000000000000000
+0x000000f5a0bfe270:   0000000000000000 0000000000000000
+0x000000f5a0bfe280:   0000000000000000 0000000000000000
+0x000000f5a0bfe290:   0000000000000000 0000000000000000
+0x000000f5a0bfe2a0:   0000000000000000 0000000000000000
+0x000000f5a0bfe2b0:   0000000000000000 0000000000000000
+0x000000f5a0bfe2c0:   0000000000000000 0000000000000000
+0x000000f5a0bfe2d0:   0000000000000000 0000000000000000
+0x000000f5a0bfe2e0:   0000000000000000 0000000000000000
+0x000000f5a0bfe2f0:   0000000000000000 0000000000000000
+0x000000f5a0bfe300:   0000000000000000 0000000000000000 
+
+Instructions: (pc=0x00007ffefec31b79)
+0x00007ffefec31a79:   48 85 c9 74 1d 80 3d 8b 45 00 00 00 74 06 48 8b
+0x00007ffefec31a89:   53 18 eb 04 48 8b 53 40 e8 8e 0e 00 00 48 83 63
+0x00007ffefec31a99:   48 00 8b 4b 0c 83 f9 ff 74 09 e8 c4 0c 00 00 83
+0x00007ffefec31aa9:   4b 0c ff 48 8b 4b 70 48 85 c9 74 0f ba 10 00 00
+0x00007ffefec31ab9:   00 e8 e5 0e 00 00 48 83 63 70 00 48 83 c4 20 5b
+0x00007ffefec31ac9:   c3 cc cc 40 53 48 83 ec 20 48 8b d9 48 8d 0d 44
+0x00007ffefec31ad9:   47 00 00 e8 93 0c 00 00 83 6b 08 01 75 24 48 8b
+0x00007ffefec31ae9:   d3 48 8d 0d 27 45 00 00 e8 1a 08 00 00 48 8b cb
+0x00007ffefec31af9:   e8 d6 fe ff ff ba 78 00 00 00 48 8b cb e8 99 0e
+0x00007ffefec31b09:   00 00 48 8d 0d 0e 47 00 00 48 83 c4 20 5b e9 60
+0x00007ffefec31b19:   0c 00 00 48 89 5c 24 08 48 89 74 24 10 57 48 83
+0x00007ffefec31b29:   ec 20 41 8b f1 4d 8b c8 48 8b fa 4c 8b d9 4d 85
+0x00007ffefec31b39:   c0 74 73 85 f6 74 6f 44 8a 12 48 8d 5a 01 48 8b
+0x00007ffefec31b49:   d3 b8 93 01 00 01 eb 12 69 c0 93 01 00 01 41 0f
+0x00007ffefec31b59:   b6 ca 44 8a 12 33 c1 48 ff c2 45 84 d2 75 e9 4d
+0x00007ffefec31b69:   8b 03 33 d2 0f ba f0 1f 49 8b cb f7 f6 48 63 d2
+0x00007ffefec31b79:   41 8b 14 91 41 ff 50 08 85 c0 7e 24 8a 0f eb 10
+0x00007ffefec31b89:   69 c0 93 01 00 01 0f b6 c9 33 c1 8a 0b 48 ff c3
+0x00007ffefec31b99:   84 c9 75 ec 0f ba f0 1f 33 d2 f7 f6 8b c2 eb 09
+0x00007ffefec31ba9:   79 04 f7 d0 eb 03 83 c8 ff 48 8b 5c 24 30 48 8b
+0x00007ffefec31bb9:   74 24 38 48 83 c4 20 5f c3 cc cc 48 89 5c 24 08
+0x00007ffefec31bc9:   48 89 74 24 10 57 48 83 ec 20 48 8b f1 48 8d 0d
+0x00007ffefec31bd9:   43 46 00 00 e8 92 0b 00 00 33 ff 39 3d 2e 44 00
+0x00007ffefec31be9:   00 76 24 48 8b 05 2d 44 00 00 48 8b d6 48 8b 1c
+0x00007ffefec31bf9:   f8 48 8b 0b e8 68 1e 00 00 85 c0 74 2b ff c7 3b
+0x00007ffefec31c09:   3d 0a 44 00 00 72 dc 33 db 48 8d 0d 07 46 00 00
+0x00007ffefec31c19:   e8 5e 0b 00 00 48 8b 74 24 38 48 8b c3 48 8b 5c
+0x00007ffefec31c29:   24 30 48 83 c4 20 5f c3 ff 43 08 eb dc cc cc 48
+0x00007ffefec31c39:   89 5c 24 08 48 89 74 24 10 57 48 83 ec 20 48 8b
+0x00007ffefec31c49:   d9 48 8b f2 48 8b 49 10 49 8b f8 8b 53 30 48 8b
+0x00007ffefec31c59:   01 ff 50 20 4c 8b 43 50 48 8b d6 48 8b 4b 10 44
+0x00007ffefec31c69:   8b c8 e8 ac fe ff ff 83 f8 ff 74 38 48 8b 4b 10 
+
+
+
+---------------  P R O C E S S  ---------------
+
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+CDS archive(s) mapped at: [0x0000000000000000-0x0000000000000000-0x0000000000000000), size 0, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 1.
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0, Narrow klass range: 0x0
+
+GC Precious Log:
+<Not initialized>
+
+
+Dynamic libraries:
+0x00007ff6b8930000 - 0x00007ff6b893e000 	c:\Users\sadiq\.vscode\extensions\redhat.java-1.39.0-win32-x64\jre\21.0.5-win32-x86_64\bin\java.exe
+0x00007fff34660000 - 0x00007fff348c3000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007fff32a10000 - 0x00007fff32ad7000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007fff320d0000 - 0x00007fff32497000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007fff31d60000 - 0x00007fff31eac000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffefd890000 - 0x00007ffefd8a8000 	c:\Users\sadiq\.vscode\extensions\redhat.java-1.39.0-win32-x64\jre\21.0.5-win32-x86_64\bin\jli.dll
+0x00007fff33340000 - 0x00007fff33509000 	C:\WINDOWS\System32\USER32.dll
+0x00007fff31eb0000 - 0x00007fff31ed7000 	C:\WINDOWS\System32\win32u.dll
+0x00007fff33d20000 - 0x00007fff33d4a000 	C:\WINDOWS\System32\GDI32.dll
+0x00007fff31b80000 - 0x00007fff31cab000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007fff31cb0000 - 0x00007fff31d53000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffefd870000 - 0x00007ffefd88e000 	c:\Users\sadiq\.vscode\extensions\redhat.java-1.39.0-win32-x64\jre\21.0.5-win32-x86_64\bin\VCRUNTIME140.dll
+0x00007fff14ef0000 - 0x00007fff15180000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.26100.3037_none_3e09262ce333c378\COMCTL32.dll
+0x00007fff32b60000 - 0x00007fff32c09000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007fff329d0000 - 0x00007fff329ff000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffeff330000 - 0x00007ffeff33c000 	c:\Users\sadiq\.vscode\extensions\redhat.java-1.39.0-win32-x64\jre\21.0.5-win32-x86_64\bin\vcruntime140_1.dll
+0x00007ffef54a0000 - 0x00007ffef552d000 	c:\Users\sadiq\.vscode\extensions\redhat.java-1.39.0-win32-x64\jre\21.0.5-win32-x86_64\bin\msvcp140.dll
+0x0000000180000000 - 0x0000000180d8f000 	c:\Users\sadiq\.vscode\extensions\redhat.java-1.39.0-win32-x64\jre\21.0.5-win32-x86_64\bin\server\jvm.dll
+0x00007fff33ea0000 - 0x00007fff33f54000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007fff32ff0000 - 0x00007fff33096000 	C:\WINDOWS\System32\sechost.dll
+0x00007fff33f80000 - 0x00007fff34096000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007fff32ae0000 - 0x00007fff32b54000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007fff311b0000 - 0x00007fff311fe000 	C:\WINDOWS\SYSTEM32\POWRPROF.dll
+0x00007fff1b170000 - 0x00007fff1b1a6000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007fff22f00000 - 0x00007fff22f0b000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007fff31130000 - 0x00007fff31144000 	C:\WINDOWS\SYSTEM32\UMPDC.dll
+0x00007fff30830000 - 0x00007fff3084a000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ffefec30000 - 0x00007ffefec3a000 	c:\Users\sadiq\.vscode\extensions\redhat.java-1.39.0-win32-x64\jre\21.0.5-win32-x86_64\bin\jimage.dll
+0x00007fff2f150000 - 0x00007fff2f391000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007fff32510000 - 0x00007fff3288e000 	C:\WINDOWS\System32\combase.dll
+0x00007fff33520000 - 0x00007fff335f6000 	C:\WINDOWS\System32\OLEAUT32.dll
+0x00007ffebed60000 - 0x00007ffebed99000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007fff31fa0000 - 0x00007fff32039000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;c:\Users\sadiq\.vscode\extensions\redhat.java-1.39.0-win32-x64\jre\21.0.5-win32-x86_64\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.26100.3037_none_3e09262ce333c378;c:\Users\sadiq\.vscode\extensions\redhat.java-1.39.0-win32-x64\jre\21.0.5-win32-x86_64\bin\server
+
+VM Arguments:
+java_command: <unknown>
+java_class_path (initial): <not set>
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags foldmultilines=false
+ #1: stderr all=off uptime,level,tags foldmultilines=false
+
+Environment Variables:
+PATH=C:\Windows\System32\HWAudioDriverLibs;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\dotnet\;D:\node.js\;C:\Users\YOUR_USERNAME\AppData\Local\Android\Sdk\emulator;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\sadiq html;D:\Android\Sdk\platform-tools;D:\flutter\bin;D:\Android\Sdk\lastest;D:\Android\Sdk\cmdline-tools\latest\bin;D:\Android\Sdk\cmdline-tools\latest\lib;C:\Windows\System32\HWAudioDriverLibs;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;D:\node.js\;C:\Users\YOUR_USERNAME\AppData\Local\Android\Sdk\emulator;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\sadiq html;C:\Users\sadiq\AppData\Local\Microsoft\WindowsApps;C:\Users\sadiq\AppData\Local\Programs\Microsoft VS Code Insiders\bin;C:\Users\sadiq\.dotnet\tools;C:\Users\sadiq\AppData\Roaming\npm;C:\Users\sadiq\AppData\Local\GitHubDesktop\bin;c:\Users\sadiq\AppData\Roaming\Code - Insiders\User\globalStorage\github.copilot-chat\debugCommand;D:\jdk-23.0.2\bin;D:\gradle-8.12.1\bin;D:\myApp\platforms\android\libs;C:\Users\sadiq\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\sadiq\.dotnet\tools;D:\java\jdk-23.0.2\bin;D:\java\Android\Sdk\platform-tools;D:\Sadiq02\flutter\bin;D:\Android\Sdk\platform-tools;D:\Android\Sdk\cmdline-tools\latest\lib;D:\Android\Sdk\cmdline-tools\latest\bin;
+USERNAME=sadiq
+LANG=en
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 140 Stepping 2, GenuineIntel
+TMP=C:\Users\sadiq\AppData\Local\Temp
+TEMP=C:\Users\sadiq\AppData\Local\Temp
+
+
+
+
+Periodic native trim disabled
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 11 , 64 bit Build 26100 (10.0.26100.3037)
+OS uptime: 0 days 0:13 hours
+
+CPU: total 8 (initial active 0) 
+Processor Information for processor 0
+  Max Mhz: 2496, Current Mhz: 2496, Mhz Limit: 2496
+Processor Information for processor 1
+  Max Mhz: 2496, Current Mhz: 998, Mhz Limit: 2496
+Processor Information for processor 2
+  Max Mhz: 2496, Current Mhz: 998, Mhz Limit: 2496
+Processor Information for processor 3
+  Max Mhz: 2496, Current Mhz: 2496, Mhz Limit: 2496
+Processor Information for processor 4
+  Max Mhz: 2496, Current Mhz: 998, Mhz Limit: 2496
+Processor Information for processor 5
+  Max Mhz: 2496, Current Mhz: 2496, Mhz Limit: 2496
+Processor Information for processor 6
+  Max Mhz: 2496, Current Mhz: 2496, Mhz Limit: 2496
+Processor Information for processor 7
+  Max Mhz: 2496, Current Mhz: 998, Mhz Limit: 2496
+
+Memory: 4k page, system-wide physical 7975M (737M free)
+TotalPageFile size 12071M (AvailPageFile size 40M)
+current process WorkingSet (physical memory assigned to process): 9M, peak: 9M
+current process commit charge ("private bytes"): 3M, peak: 3M
+
+vm_info: OpenJDK 64-Bit Server VM (21.0.5+11-LTS) for windows-amd64 JRE (21.0.5+11-LTS), built on 2024-10-15T00:00:00Z by "admin" with MS VC++ 17.7 (VS2022)
+
+END.
